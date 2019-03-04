@@ -11,11 +11,12 @@ import java.util.Scanner;
 public class main {
 
     public static void main(String args[]) {
-        System.out.print("Enter number of rows: ");
+        System.out.print("Enter number of rows and columns: ");
         Scanner in = new Scanner(System.in);
         int rows = in.nextInt();
-        System.out.print("\nEnter number of columns: ");
-        int cols = in.nextInt();
+//        System.out.print("\nEnter number of columns: ");
+//        int cols = in.nextInt();
+        int cols = rows;
         System.out.println();
 
         if (rows == 1 && cols == 1) {
@@ -182,7 +183,7 @@ public class main {
 
             }
         }
-
+        System.out.println();
     }
 
     static void printHorizontalFiller(boolean whitespace) {
